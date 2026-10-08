@@ -7,62 +7,62 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const TESTIMONIALS_ROW_1 = [
   {
-    name: "Kavindi Perera",
-    role: "Freelance Video Editor · Colombo",
-    text: "I went from knowing nothing about video editing to landing my first paid client within 6 weeks. The CapCut masterclass is genuinely life-changing.",
-    initial: "K",
+    name: "Built For Real Business Needs",
+    role: "Core Principle 01",
+    text: "We focus on creating useful digital products that solve real problems.",
+    initial: "B",
     bg: "bg-[#FF5A1F]"
   },
   {
-    name: "Tharushi Fernando",
-    role: "Content Creator · Kandy",
-    text: "The color grading module alone was worth the entire course fee. My reels now get 10× more engagement and brands are actually reaching out to me.",
-    initial: "T",
+    name: "Modern Technology",
+    role: "Core Principle 02",
+    text: "We use modern and proven technologies to build reliable software.",
+    initial: "M",
     bg: "bg-[#3B82F6]"
   },
   {
-    name: "Ravindu Silva",
-    role: "Social Media Manager · Galle",
-    text: "I used to spend hours on a single edit. After completing the curriculum I finish professional-quality videos in under 90 minutes.",
-    initial: "R",
+    name: "Scalable Solutions",
+    role: "Core Principle 03",
+    text: "Our solutions are designed to grow as your business grows.",
+    initial: "S",
     bg: "bg-[#EF4444]"
   },
   {
-    name: "Kasun Jayasuriya",
-    role: "YouTube Creator · Kurunegala",
-    text: "The step-by-step sound design and typography lessons elevated my videos to a commercial standard overnight. Highly recommended!",
-    initial: "K",
+    name: "Long-Term Partnership",
+    role: "Core Principle 04",
+    text: "We can continue improving and supporting your product after launch.",
+    initial: "L",
     bg: "bg-[#8B5CF6]"
   }
 ];
 
 const TESTIMONIALS_ROW_2 = [
   {
-    name: "Dilini Amarasinghe",
-    role: "Junior Video Editor · Negombo",
-    text: "The real client project modules gave me a portfolio that impressed agencies. I got hired full-time two months after finishing the course.",
-    initial: "D",
+    name: "Built For Real Business Needs",
+    role: "Core Principle 01",
+    text: "We focus on creating useful digital products that solve real problems.",
+    initial: "B",
     bg: "bg-[#10B981]"
   },
   {
-    name: "Chathura Jayawardena",
-    role: "Videographer · Matara",
-    text: "Motion graphics and text animations used to feel impossible. Now I create cinematic title sequences for every project. Absolutely worth it.",
-    initial: "C",
+    name: "Modern Technology",
+    role: "Core Principle 02",
+    text: "We use modern and proven technologies to build reliable software.",
+    initial: "M",
     bg: "bg-[#F59E0B]"
   },
   {
-    name: "Nethmi Wickramasinghe",
-    role: "Editing Studio Owner · Colombo",
-    text: "The instructor breaks down complex AI tools into simple steps. I built my entire editing business on what I learned here and I am earning more than I ever expected.",
-    initial: "N",
+    name: "Scalable Solutions",
+    role: "Core Principle 03",
+    text: "Our solutions are designed to grow as your business grows.",
+    initial: "S",
     bg: "bg-[#EC4899]"
   },
   {
-    name: "Shehan Bandara",
-    role: "Digital Marketer · Gampaha",
-    text: "Getting 2 months of CapCut Pro included gave me immediate access to all premium features while building real commercial projects.",
-    initial: "S",
+    name: "Long-Term Partnership",
+    role: "Core Principle 04",
+    text: "We can continue improving and supporting your product after launch.",
+    initial: "L",
     bg: "bg-[#6366F1]"
   }
 ];
@@ -96,10 +96,10 @@ export default function TestimonialsSection() {
     <div ref={containerRef} id="testimonials" className="w-full py-12 sm:py-20 bg-white text-neutral-900 overflow-hidden select-none">
       <div className="max-w-340 2xl:max-w-408 mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8 sm:mb-16">
         <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-neutral-900 leading-[1.12]">
-          Real Results from Real Students.
+          Built For Real Business Needs.
         </h2>
         <p className="mt-3 text-neutral-500 text-xs sm:text-base max-w-xl mx-auto leading-relaxed font-normal">
-          Over 5,000 students have transformed their editing skills — here is what they have to say.
+          Our core principles and commitments to every software project we undertake.
         </p>
       </div>
 

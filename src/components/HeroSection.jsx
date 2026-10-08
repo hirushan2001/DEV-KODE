@@ -9,52 +9,52 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const HERO_DATA = [
   {
     id: 0,
-    slug: '/editing-fundamentals',
-    name: 'Editing Fundamentals',
-    badge: 'Editing Fundamentals',
-    title: <>Master the Cut <br/><span className="text-white">Tell Better Stories.</span></>,
-    desc: 'Learn essential editing principles, timelines, trimming, speed ramping, keyframes, and pacing used in professional workflows.',
+    slug: '/#services',
+    name: 'Web Development',
+    badge: 'WEB • SOFTWARE • AI',
+    title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,
+    desc: 'DEV KODE builds modern websites, web applications, custom software, mobile applications and AI-powered solutions for businesses and ambitious ideas.',
     webBg: '/main/1/hero/web/Funde-bg.png',
     mobileBg: '/main/1/hero/mobile/capcut-bg-mobile.png',
-    alt: 'EDITING FUNDAMENTALS MODULE'
+    alt: 'DEV KODE Web Development'
   },
   {
     id: 1,
-    slug: '/color-grading',
-    name: 'Color Grading',
-    badge: 'Color Grading Module',
-    title: <>Transform Color <br/><span className="text-white">Create Cinema.</span></>,
-    desc: 'Master color correction, contrast adjustments, skin tone protection, and 3D LUT grading to give every video a polished film look.',
+    slug: '/#services',
+    name: 'Custom Software',
+    badge: 'WEB • SOFTWARE • AI',
+    title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,
+    desc: 'DEV KODE builds modern websites, web applications, custom software, mobile applications and AI-powered solutions for businesses and ambitious ideas.',
     webBg: '/main/1/hero/web/color-grad-new.png',
     mobileBg: '/main/1/hero/web/color-grad-new.png',
-    alt: 'COLOR GRADING MODULE'
+    alt: 'DEV KODE Custom Software'
   },
   {
     id: 2,
-    slug: '/music-and-sound',
-    name: 'Music & Sound effects',
-    badge: 'Capcut Masterclass',
-    title: <>Create Emotion <br/><span className="text-white">Through Audio.</span></>,
-    desc: 'Learn how to choose music, mix clean audio, and add sound effects that strengthen emotion, rhythm, and storytelling throughout every edit.',
+    slug: '/#services',
+    name: 'Mobile Applications',
+    badge: 'WEB • SOFTWARE • AI',
+    title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,
+    desc: 'DEV KODE builds modern websites, web applications, custom software, mobile applications and AI-powered solutions for businesses and ambitious ideas.',
     webBg: '/main/1/hero/web/music-bg.png',
     mobileBg: '/main/1/hero/mobile/music-bg-mobile.png',
-    alt: 'Capcut Masterclass'
+    alt: 'DEV KODE Mobile Applications'
   },
   {
     id: 3,
-    slug: '/typography',
-    name: 'Typography',
-    badge: 'Typography Module',
-    title: <>Pop Subtitles <br/><span className="text-white">Engage Viewers.</span></>,
-    desc: 'Learn how to create professional titles, captions, and animated text that make your videos more engaging, clear, and visually appealing.',
+    slug: '/#services',
+    name: 'AI & Automation',
+    badge: 'WEB • SOFTWARE • AI',
+    title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,
+    desc: 'DEV KODE builds modern websites, web applications, custom software, mobile applications and AI-powered solutions for businesses and ambitious ideas.',
     webBg: '/main/1/hero/web/typo-bg.png',
     mobileBg: '/main/1/hero/mobile/typo-bg-mobile.png',
-    alt: 'Typography Module'
+    alt: 'DEV KODE AI & Automation'
   }
 ];
 
 export default function HeroSection() {
-  const [activeTab, setActiveTab] = useState(2); // Music & Sound effects default
+  const [activeTab, setActiveTab] = useState(0); // Web Development default
   const heroRef = useRef(null);
 
   useGSAP(() => {
@@ -121,7 +121,7 @@ export default function HeroSection() {
 
   return (
     <div id="home" className="sticky top-0 z-10 w-full bg-black">
-      <div id="about">
+      <div>
         <section ref={heroRef} id="home" className="relative w-full h-dvh bg-black text-white pt-14 sm:pt-20 flex flex-col justify-between overflow-hidden">
           
           {/* Background Images Layer */}
@@ -138,7 +138,7 @@ export default function HeroSection() {
                   <img
                     alt={item.alt}
                     src={item.mobileBg}
-                    className="object-cover object-center brightness-110 contrast-105 w-full h-full"
+                    className="object-cover object-center brightness-110 contrast-105 w-full h-full opacity-60"
                   />
                 </div>
                 {/* Desktop Image */}
@@ -146,13 +146,13 @@ export default function HeroSection() {
                   <img
                     alt={item.alt}
                     src={item.webBg}
-                    className="object-cover brightness-110 contrast-105 object-top sm:object-center w-full h-full"
+                    className="object-cover brightness-110 contrast-105 object-top sm:object-center w-full h-full opacity-60"
                   />
                 </div>
               </div>
             ))}
 
-            <div className="absolute inset-0 z-20 bg-gradient-to-t from-black via-black/50 to-transparent sm:bg-gradient-to-r sm:from-black sm:via-black/80 sm:via-30% sm:to-transparent sm:to-65%"></div>
+            <div className="absolute inset-0 z-20 bg-gradient-to-t from-black via-black/60 to-transparent sm:bg-gradient-to-r sm:from-black sm:via-black/80 sm:via-40% sm:to-transparent sm:to-75%"></div>
           </div>
 
           {/* Foreground Text */}
@@ -162,16 +162,16 @@ export default function HeroSection() {
               <div>
                 <div className="gsap-anim-item font-poppins tracking-wider inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[10px] sm:text-[11px] font-semibold uppercase text-white shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-white/90 animate-pulse"></span>
-                  {activeMod.badge}
+                  WEB • SOFTWARE • AI
                 </div>
               </div>
 
-              <h1 className="gsap-anim-item text-[40px] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-white drop-shadow-md">
-                {activeMod.title}
+              <h1 className="gsap-anim-item text-[36px] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-white drop-shadow-md">
+                We Build Digital Products That Move Businesses Forward.
               </h1>
 
-              <p className="max-w-67.5 sm:max-w-full gsap-anim-item text-[9px] sm:text-sm lg:text-base 2xl:text-lg text-gray-300 lg:max-w-lg 2xl:max-w-xl font-normal tracking-tight leading-relaxed">
-                {activeMod.desc}
+              <p className="max-w-full gsap-anim-item text-[12px] sm:text-sm lg:text-base 2xl:text-lg text-gray-300 lg:max-w-lg 2xl:max-w-xl font-normal tracking-tight leading-relaxed">
+                DEV KODE builds modern websites, web applications, custom software, mobile applications and AI-powered solutions for businesses and ambitious ideas.
               </p>
 
               {/* Action Buttons */}
@@ -179,25 +179,23 @@ export default function HeroSection() {
                 <div className="hidden sm:inline-flex items-center gap-3 sm:gap-4">
                   <a
                     className="relative overflow-hidden inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#E8344A] to-[#FF6B35] hover:from-orange-600 hover:to-red-600 text-white font-bold text-sm sm:text-base transition-all duration-300 shadow-lg shadow-orange-500/25 hover:scale-105 cursor-pointer select-none px-7 py-3 before:absolute before:inset-0 before:-translate-x-full hover:before:translate-x-full before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:transition-transform before:duration-700"
-                    href="https://lms.editor.lk/payment"
-                    target="_blank"
-                    rel="noreferrer"
+                    href="/#contact"
                   >
-                    <span className="relative z-10">Enroll Now</span>
+                    <span className="relative z-10">Start a Project</span>
                     <svg className="w-4 h-4 shrink-0 relative z-10" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </a>
                   <a
                     className="inline-flex items-center justify-center gap-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white font-semibold text-sm sm:text-base transition-all duration-300 cursor-pointer select-none px-5 py-3 hover:scale-105"
-                    href="#curriculum"
+                    href="/#projects"
                   >
                     <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                       <svg className="w-3 h-3 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                         <path clipRule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" fillRule="evenodd" />
                       </svg>
                     </div>
-                    <span>Explore</span>
+                    <span>Explore Our Work</span>
                   </a>
                 </div>
 
@@ -205,45 +203,43 @@ export default function HeroSection() {
                   <div className="flex gap-2 w-full">
                     <a
                       className="flex-1 py-3 rounded-full bg-gradient-to-r from-[#F93B4E] to-[#FF6B35] text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-lg shadow-red-500/25 active:scale-95 transition-all"
-                      href="https://lms.editor.lk/payment"
-                      target="_blank"
-                      rel="noreferrer"
+                      href="/#contact"
                     >
-                      <span>Enroll Now</span>
+                      <span>Start a Project</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" />
                       </svg>
                     </a>
 
-                    <Link
-                      to={activeMod.slug}
+                    <a
+                      href="/#projects"
                       className="py-3 px-4 rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-300 font-bold text-xs flex items-center justify-center gap-1 active:scale-95 transition-all"
                     >
-                      <span>Page</span>
+                      <span>Work</span>
                       <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" />
                       </svg>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              {/* Student Proof */}
+              {/* Business Proof Badge */}
               <div className="gsap-anim-item flex items-center justify-between sm:justify-start gap-3 pt-1">
                 <div className="flex items-center gap-3">
                   <div className="flex -space-x-2 overflow-hidden">
-                    <img alt="Editor.lk Student" className="inline-block h-8 w-8 rounded-full ring-2 ring-black object-cover shrink-0" src="/avatars/avatar-1.jpg" />
-                    <img alt="Editor.lk Student" className="inline-block h-8 w-8 rounded-full ring-2 ring-black object-cover shrink-0" src="/avatars/avatar-2.jpg" />
-                    <img alt="Editor.lk Student" className="inline-block h-8 w-8 rounded-full ring-2 ring-black object-cover shrink-0" src="/avatars/avatar-3.jpg" />
+                    <img alt="DEV KODE Client" className="inline-block h-8 w-8 rounded-full ring-2 ring-black object-cover shrink-0" src="/avatars/avatar-1.jpg" />
+                    <img alt="DEV KODE Client" className="inline-block h-8 w-8 rounded-full ring-2 ring-black object-cover shrink-0" src="/avatars/avatar-2.jpg" />
+                    <img alt="DEV KODE Client" className="inline-block h-8 w-8 rounded-full ring-2 ring-black object-cover shrink-0" src="/avatars/avatar-3.jpg" />
                   </div>
 
                   <div className="flex flex-col text-[11px] sm:text-xs text-white/90 font-medium">
-                    <span>Join <strong className="text-white font-bold">5,000+</strong> students already learning</span>
+                    <span>Trusted by <strong className="text-white font-bold">50+</strong> ambitious businesses & startups</span>
                     <div className="flex text-amber-400 text-xs tracking-tighter">★★★★★</div>
                   </div>
                 </div>
 
-                <a aria-label="Explore curriculum" className="sm:hidden flex items-center justify-center w-11 h-11 rounded-full bg-white/15 border border-white/20 text-white shrink-0 active:scale-90 transition-transform" href="#curriculum">
+                <a aria-label="Explore services" className="sm:hidden flex items-center justify-center w-11 h-11 rounded-full bg-white/15 border border-white/20 text-white shrink-0 active:scale-90 transition-transform" href="#services">
                   <svg className="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>

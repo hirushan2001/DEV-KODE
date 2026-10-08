@@ -94,14 +94,14 @@ export default function RealProjectsSection() {
   return (
     <section ref={sectionRef} id="projects" className="relative w-full pt-6 sm:pt-10 pb-16 sm:pb-20 bg-white text-neutral-900 force-rounded-b rounded-b-[40px] sm:rounded-b-[56px] overflow-hidden">
       <div className="max-w-340 2xl:max-w-408 mx-auto px-4 sm:px-6 lg:px-8 text-center mb-6 sm:mb-14">
-        <p className="text-xs sm:text-lg text-[#4B5563] tracking-normal sm:tracking-wide font-normal mb-1.5 sm:mb-0">
-          The Ultimate Space to Perfect Your Editing Skills.
+        <p className="text-xs sm:text-lg text-[#4B5563] tracking-normal sm:tracking-wide font-normal mb-1.5 sm:mb-0 uppercase font-semibold">
+          Web • Software • AI
         </p>
         <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 leading-[1.1]">
-          Learn by building <br className="sm:hidden" /> real projects.
+          Featured Projects.
         </h2>
         <p className="mt-2.5 sm:mt-3 text-xs sm:text-lg text-[#4B5563] max-w-2xl mx-auto leading-relaxed">
-          From cuts to masterpieces, practice makes you perfect!
+          Explore scalable web platforms, custom software, and digital products engineered by DEV KODE.
         </p>
       </div>
 
@@ -110,69 +110,128 @@ export default function RealProjectsSection() {
         <div className="real-projects-img relative w-full mx-auto aspect-video max-h-165 rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-neutral-200">
           <img
             src="/main/1/real-projects/main.png"
-            alt="Learn by building real projects - CapCut Masterclass"
+            alt="Featured Projects Showcase - DEV KODE"
             className="w-full h-full object-cover object-center"
           />
         </div>
       </div>
 
       <div className="max-w-350 2xl:max-w-408 mx-auto px-4 sm:px-6 lg:px-8 mt-6 sm:mt-14 text-center sm:text-left">
-        <p className="text-xs sm:text-base text-[#4B5563] leading-relaxed max-w-xl mx-auto sm:mx-0">
-          With hands-on, real projects and a <strong className="text-neutral-900 font-bold">FREE 1-month CapCut account</strong>, you'll unlock creativity, sharpen skills, and craft cinematic results.
+        <p className="text-xs sm:text-base text-[#4B5563] leading-relaxed max-w-2xl mx-auto sm:mx-0">
+          From full-stack web applications to AI-powered automation, we combine <strong className="text-neutral-900 font-bold">thoughtful architecture and modern technologies</strong> to deliver reliable software solutions.
         </p>
       </div>
 
-      {/* 3 Project Feature Cards with staggered GSAP scroll trigger */}
-      <div ref={cardsRef} className="max-w-350 2xl:max-w-408 mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      {/* Project Grid */}
+      <div ref={cardsRef} className="max-w-350 2xl:max-w-408 mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
-        {/* Card 1 */}
-        <div className="project-card flex flex-col gap-5 group cursor-pointer">
+        {/* Project 01 */}
+        <div className="project-card flex flex-col gap-4 group cursor-pointer bg-neutral-50/50 p-5 rounded-3xl border border-neutral-200/80 hover:border-orange-500/40 transition-all">
           <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-md border border-neutral-200">
             <img
               src="/main/1/real-projects/motion.png"
-              alt="Motion Graphics"
+              alt="DayTours Sri Lanka"
               className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <div>
-            <h3 className="text-base sm:text-lg font-bold text-neutral-900 tracking-tight">Motion Graphics</h3>
-            <p className="mt-1.5 text-sm text-[#4B5563] leading-relaxed line-clamp-3">
-              Master the techniques behind engaging motion graphics, animated elements, and visual effects used in professional videos.
+          <div className="space-y-2">
+            <h3 className="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">DayTours Sri Lanka</h3>
+            <p className="text-sm text-[#4B5563] leading-relaxed">
+              A modern tourism platform designed to showcase Sri Lankan tours, destinations and travel experiences.
             </p>
+            <div className="pt-2">
+              <span className="inline-block text-xs font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-200/60">
+                Next.js • Node.js • PostgreSQL • Tailwind CSS
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Card 2 */}
-        <div className="project-card flex flex-col gap-5 group cursor-pointer">
+        {/* Project 02 */}
+        <div className="project-card flex flex-col gap-4 group cursor-pointer bg-neutral-50/50 p-5 rounded-3xl border border-neutral-200/80 hover:border-orange-500/40 transition-all">
           <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-md border border-neutral-200">
             <img
               src="/main/1/real-projects/before-after.png"
-              alt="Before & After"
+              alt="Serendib Adventures"
               className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <div>
-            <h3 className="text-base sm:text-lg font-bold text-neutral-900 tracking-tight">Before & After</h3>
-            <p className="mt-1.5 text-sm text-[#4B5563] leading-relaxed line-clamp-3">
-              Create stunning visuals by enhancing colors, lighting, and contrast with professional color grading techniques.
+          <div className="space-y-2">
+            <h3 className="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">Serendib Adventures</h3>
+            <p className="text-sm text-[#4B5563] leading-relaxed">
+              An adventure tourism website showcasing outdoor experiences, activities and destinations across Sri Lanka.
             </p>
+            <div className="pt-2">
+              <span className="inline-block text-xs font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-200/60">
+                Next.js • React • Tailwind CSS
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Card 3 */}
-        <div className="project-card flex flex-col gap-5 group cursor-pointer">
+        {/* Project 03 */}
+        <div className="project-card flex flex-col gap-4 group cursor-pointer bg-neutral-50/50 p-5 rounded-3xl border border-neutral-200/80 hover:border-orange-500/40 transition-all">
           <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-md border border-neutral-200">
             <img
               src="/main/1/real-projects/effect.png"
-              alt="Effect & Transitions"
+              alt="FieldMaster"
               className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <div>
-            <h3 className="text-base sm:text-lg font-bold text-neutral-900 tracking-tight">Effect & Transitions</h3>
-            <p className="mt-1.5 text-sm text-[#4B5563] leading-relaxed line-clamp-3">
-              Learn how to use professional effects and seamless transitions to create smooth, engaging videos that capture your audience's attention.
+          <div className="space-y-2">
+            <h3 className="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">FieldMaster</h3>
+            <p className="text-sm text-[#4B5563] leading-relaxed">
+              A full-stack agriculture platform for land measurement, plantation management and agricultural calculations.
             </p>
+            <div className="pt-2">
+              <span className="inline-block text-xs font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-200/60">
+                React • Node.js • Express • MongoDB • React Native
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 04 */}
+        <div className="project-card flex flex-col gap-4 group cursor-pointer bg-neutral-50/50 p-5 rounded-3xl border border-neutral-200/80 hover:border-orange-500/40 transition-all">
+          <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-md border border-neutral-200">
+            <img
+              src="/main/1/footer/protfolio.png"
+              alt="HandFree"
+              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div className="space-y-2">
+            <h3 className="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">HandFree</h3>
+            <p className="text-sm text-[#4B5563] leading-relaxed">
+              A modern e-commerce platform built with a scalable MERN microservices architecture.
+            </p>
+            <div className="pt-2">
+              <span className="inline-block text-xs font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-200/60">
+                React • Node.js • Express • MongoDB
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 05 */}
+        <div className="project-card flex flex-col gap-4 group cursor-pointer bg-neutral-50/50 p-5 rounded-3xl border border-neutral-200/80 hover:border-orange-500/40 transition-all">
+          <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-md border border-neutral-200">
+            <img
+              src="/main/1/footer/realtime.png"
+              alt="RooVerse"
+              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div className="space-y-2">
+            <h3 className="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">RooVerse</h3>
+            <p className="text-sm text-[#4B5563] leading-relaxed">
+              An entertainment platform for discovering movies and television content through a modern digital experience.
+            </p>
+            <div className="pt-2">
+              <span className="inline-block text-xs font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-full border border-orange-200/60">
+                React • Node.js • MongoDB • REST APIs
+              </span>
+            </div>
           </div>
         </div>
 

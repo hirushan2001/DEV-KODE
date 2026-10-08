@@ -8,44 +8,58 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const CARDS = [
   {
-    id: 'editing-fundamentals',
-    category: 'Editing Fundamentals',
-    title: 'Master the Fundamentals',
-    description: 'Build a strong foundation in video editing. Learn timelines, cuts, sequencing, pacing, and the essential editing principles used in professional workflows.',
+    id: 'web-development',
+    category: 'Service 01',
+    title: 'Web Development',
+    description: 'Modern, responsive websites and web applications built for performance, usability and growth.',
     image: '/main/1/what-u-learn/master-of-funde.png',
-    initial: 'E',
-    link: 'https://lms.editor.lk/payment',
-    href: '/editing-fundamentals'
+    initial: 'W',
+    href: '/#contact'
   },
   {
-    id: 'color-grading',
-    category: 'Color Grading',
-    title: 'Master Color Grading',
-    description: 'Transform ordinary footage into cinematic visuals. Learn how to adjust colors, contrast, and lighting to create a professional look and enhance the mood of every video.',
+    id: 'custom-software',
+    category: 'Service 02',
+    title: 'Custom Software',
+    description: 'Tailored software solutions designed around your business processes and requirements.',
     image: '/main/1/what-u-learn/master-of-color.png',
-    initial: 'C',
-    link: 'https://lms.editor.lk/payment',
-    href: '/color-grading'
+    initial: 'S',
+    href: '/#contact'
   },
   {
-    id: 'music-and-sound',
-    category: 'Music & Sound effects',
-    title: 'The Power of Sound',
-    description: 'Discover how the right audio can enhance your videos with immersive music, impactful sound effects, and balanced audio.',
+    id: 'mobile-applications',
+    category: 'Service 03',
+    title: 'Mobile Applications',
+    description: 'Modern mobile applications designed to provide seamless experiences across devices.',
     image: '/main/1/what-u-learn/power-of-sound.png',
     initial: 'M',
-    link: 'https://lms.editor.lk/payment',
-    href: '/music-and-sound'
+    href: '/#contact'
   },
   {
-    id: 'typography',
-    category: 'Typography',
-    title: 'Professional Typography',
-    description: 'Learn how to create professional titles, captions, and animated text that make your videos more engaging, clear, and visually appealing.',
+    id: 'ai-automation',
+    category: 'Service 04',
+    title: 'AI & Automation',
+    description: 'Intelligent AI-powered features and automation solutions that help businesses work smarter.',
     image: '/main/1/what-u-learn/typo.png',
-    initial: 'T',
-    link: 'https://lms.editor.lk/payment',
-    href: '/typography'
+    initial: 'A',
+    href: '/#contact'
+  },
+  {
+    id: 'ui-ux-design',
+    category: 'Service 05',
+    title: 'UI/UX Design',
+    description: 'Clean, intuitive and user-focused digital experiences designed to make products easier to use.',
+    image: '/main/1/real-projects/motion.png',
+    initial: 'D',
+    href: '/#contact'
+  },
+  {
+    id: 'cloud-devops',
+    category: 'Service 06',
+    title: 'Cloud & DevOps',
+    description: 'Reliable deployment, APIs, infrastructure and cloud solutions for scalable applications.',
+    image: '/main/1/real-projects/before-after.png',
+    initial: 'C',
+    href: '/#contact'
   }
 ];
 
@@ -67,7 +81,7 @@ export default function WhatYouLearn() {
         gsap.set(card, { flexGrow: idx === 0 ? 2.5 : 1, force3D: true });
       });
 
-      // Entry animation on scroll (hardware-accelerated smooth 60fps entrance)
+      // Entry animation on scroll
       if (desktopContainerRef.current) {
         gsap.fromTo(
           ".accordion-card",
@@ -94,12 +108,14 @@ export default function WhatYouLearn() {
     mm.add("(max-width: 1023px)", () => {
       if (!mobileContainerRef.current) return;
       const stackCards = gsap.utils.toArray(".mobile-stack-card");
-      const bgColors = ["#000000", "#2D2D30", "#58585E", "#8E8E93"];
+      const bgColors = ["#000000", "#1C1C1E", "#2D2D30", "#58585E", "#717680", "#8E8E93"];
       const borderColors = [
         "rgba(255, 255, 255, 0.15)",
-        "rgba(255, 255, 255, 0.25)",
+        "rgba(255, 255, 255, 0.22)",
+        "rgba(255, 255, 255, 0.3)",
         "rgba(255, 255, 255, 0.4)",
-        "rgba(255, 255, 255, 0.55)"
+        "rgba(255, 255, 255, 0.5)",
+        "rgba(255, 255, 255, 0.6)"
       ];
       const viewportHeight = window.innerHeight;
 
@@ -195,7 +211,7 @@ export default function WhatYouLearn() {
   };
 
   return (
-    <div id="curriculum">
+    <div id="services">
       <div id="features">
         <section
           ref={sectionRef}
@@ -206,10 +222,10 @@ export default function WhatYouLearn() {
             {/* Header */}
             <div className="text-center mt-2 md:mt-0 max-w-xl lg:max-w-4xl mx-auto mb-4 sm:mb-14">
               <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-900 leading-[1.08]">
-                What You'll Learn
+                Services We Provide
               </h2>
               <p className="mt-2 sm:mt-6 text-xs sm:text-lg text-neutral-600 font-normal leading-relaxed max-w-7xl mx-auto px-2">
-                From beginner basics to advanced CapCut lessons, every step helps you craft cinematic, impressive videos that deliver real professional results - 100% recommended for editors ready to shine.
+                DEV KODE delivers high-performance digital products engineered to solve business problems, engage users, and scale seamlessly.
               </p>
             </div>
 
@@ -333,15 +349,15 @@ export default function WhatYouLearn() {
 
                       {isActive && (
                         <div className="shrink-0 flex items-center gap-2">
-                          <Link
-                            to={card.href}
+                          <a
+                            href={card.href}
                             className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#E8344A] to-[#FF6B35] hover:from-orange-600 hover:to-red-600 text-white font-extrabold text-xs sm:text-sm transition-all duration-300 shadow-lg shadow-orange-500/30 hover:scale-105 px-5 py-3"
                           >
-                            <span>View Module Page</span>
+                            <span>Get Started</span>
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
-                          </Link>
+                          </a>
                         </div>
                       )}
                     </div>

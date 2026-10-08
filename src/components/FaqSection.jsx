@@ -9,28 +9,28 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const FAQS = [
   {
     num: "01",
-    question: "Does CapCut work for long-format videos too?",
-    answer: "Yes! CapCut handles long-form YouTube videos, podcasts, and documentaries seamlessly with advanced multi-track timelines, proxies, and audio editing tools."
+    question: "What services does DEV KODE provide?",
+    answer: "DEV KODE builds custom websites, web applications, custom software, mobile applications, AI & automation solutions, and clean UI/UX designs for businesses of all sizes."
   },
   {
     num: "02",
-    question: "How long do I have access to this course?",
-    answer: "You get 4 months of full access to all course modules, practical project files, and content updates during your access period, so you can learn at your own pace."
+    question: "How do we get started on a project with DEV KODE?",
+    answer: "Getting started is simple! Fill out our project inquiry form or reach out via WhatsApp/email. We will analyze your requirements and provide a detailed proposal and technical roadmap."
   },
   {
     num: "03",
-    question: "Do I need any prior editing experience?",
-    answer: "No prior experience is needed. The course begins with editing fundamentals and guides you step-by-step to advanced cinematic techniques."
+    question: "What technologies and frameworks do you use?",
+    answer: "We use modern, industry-standard technologies including React, Next.js, TypeScript, Node.js, Express, NestJS, ASP.NET Core, PostgreSQL, MongoDB, AWS, Docker, and Vercel."
   },
   {
     num: "04",
-    question: "Can I learn CapCut on Windows or Mac?",
-    answer: "Yes! The masterclass covers CapCut Desktop (Windows/Mac) with complete step-by-step practical workflows."
+    question: "Do you offer ongoing support and maintenance after launch?",
+    answer: "Yes! We provide post-launch maintenance, cloud deployment monitoring, security updates, feature enhancements, and continuous long-term technical partnerships."
   },
   {
     num: "05",
-    question: "Is the free CapCut Pro account included?",
-    answer: "Yes, upon enrolling in the Masterclass, you will receive 01 months of full CapCut Pro access included with your student account."
+    question: "How long does a typical software project take?",
+    answer: "Project timelines depend on complexity and scope. Typical websites take 1-3 weeks, while full-stack web applications and custom software range from 4-12 weeks delivered in agile sprints."
   }
 ];
 
@@ -69,7 +69,7 @@ export default function FaqSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-[#575E70] text-xs sm:text-base max-w-xl mx-auto leading-relaxed">
-            Everything you need to know before joining the CapCut Masterclass. Get started with professional mobile and desktop editing today.
+            Everything you need to know about working with DEV KODE to build your digital product.
           </p>
         </div>
 
