@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -79,11 +80,11 @@ export default function FooterSection() {
             <div className="flex flex-col gap-3.5 sm:gap-4">
               <h4 className="text-sm sm:text-base font-bold text-white tracking-tight">Quick Links</h4>
               <div className="flex flex-col gap-2.5 sm:gap-3">
-                <a className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" href="/">Home</a>
-                <a className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" href="/#services">Services</a>
-                <a className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" href="/#projects">Projects</a>
-                <a className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" href="/#about">About</a>
-                <a className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" href="/#contact">Contact</a>
+                <Link className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" to="/">Home</Link>
+                <Link className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" to="/services">Services</Link>
+                <Link className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" to="/projects">Projects</Link>
+                <Link className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" to="/about">About</Link>
+                <Link className="text-xs sm:text-sm text-[#8E8E93] hover:text-white transition-colors duration-200 font-medium" to="/contact">Contact</Link>
               </div>
             </div>
 

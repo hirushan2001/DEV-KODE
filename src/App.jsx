@@ -22,6 +22,11 @@ import ColorGradingPage from './pages/ColorGradingPage';
 import MusicAndSoundPage from './pages/MusicAndSoundPage';
 import TypographyPage from './pages/TypographyPage';
 import ProjectsPage from './pages/ProjectsPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import ServicesPage from './pages/ServicesPage';
+import ComparisonMatrix from './components/ComparisonMatrix';
+import EngineeringPipeline from './components/EngineeringPipeline';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -127,10 +132,16 @@ function HomeContent() {
         </div>
       </div>
 
+      {/* Engineering Pipeline */}
+      <EngineeringPipeline />
+
       {/* Solution Offer Section */}
       <div id="pricing" className="relative z-10 w-full bg-neutral-950 pt-10 pb-8">
         <PricingSection />
       </div>
+
+      {/* Competitive Comparison Matrix */}
+      <ComparisonMatrix />
 
       {/* Comparison, Value Props, FAQ & Contact (White rounded card container) */}
       <div className="transform-gpu relative z-30 w-full bg-white text-neutral-900 force-rounded-t force-rounded-b rounded-t-[40px] sm:rounded-t-[56px] rounded-b-[40px] sm:rounded-b-[56px] shadow-[0_-10px_25px_rgba(0,0,0,0.5)] sm:shadow-[0_-25px_60px_rgba(0,0,0,0.8),0_25px_60px_rgba(0,0,0,0.4)] overflow-hidden">
@@ -150,6 +161,9 @@ export default function App() {
       <PageLayout>
         <Routes>
           <Route path="/" element={<HomeContent />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects-showcase" element={<ProjectsPage />} />
           <Route path="/editing-fundamentals" element={<EditingFundamentalsPage />} />

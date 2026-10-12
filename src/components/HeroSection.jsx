@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const HERO_DATA = [
   {
     id: 0,
-    slug: '/#services',
+    slug: '/services',
     name: 'Web Development',
     badge: 'WEB • SOFTWARE • AI',
     title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,
@@ -20,7 +20,7 @@ const HERO_DATA = [
   },
   {
     id: 1,
-    slug: '/#services',
+    slug: '/services',
     name: 'Custom Software',
     badge: 'WEB • SOFTWARE • AI',
     title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,
@@ -31,7 +31,7 @@ const HERO_DATA = [
   },
   {
     id: 2,
-    slug: '/#services',
+    slug: '/services',
     name: 'Mobile Applications',
     badge: 'WEB • SOFTWARE • AI',
     title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,
@@ -42,7 +42,7 @@ const HERO_DATA = [
   },
   {
     id: 3,
-    slug: '/#services',
+    slug: '/services',
     name: 'AI & Automation',
     badge: 'WEB • SOFTWARE • AI',
     title: <>We Build Digital Products <br/><span className="text-white">That Move Businesses Forward.</span></>,

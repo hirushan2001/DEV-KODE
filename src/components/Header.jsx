@@ -34,42 +34,42 @@ export default function Header() {
           <Link className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} to="/">
             Home
           </Link>
-          <a className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} href="/#services">
+          <Link className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} to="/services">
             Services
-          </a>
+          </Link>
           <Link className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} to="/projects">
             Projects
           </Link>
-          <a className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} href="/#about">
+          <Link className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} to="/about">
             About
-          </a>
-          <a className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} href="/#contact">
+          </Link>
+          <Link className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${scrolled ? 'text-black/90 hover:text-black' : 'text-white/90 hover:text-white'}`} to="/contact">
             Contact
-          </a>
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-6 shrink-0">
-          <a
+          <Link
             className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 border shadow-md hover:scale-105 ${
               scrolled
                 ? 'bg-black border-black text-white hover:bg-neutral-900'
                 : 'bg-white border-white text-black hover:bg-neutral-100'
             }`}
-            href="/#contact"
+            to="/contact"
           >
             Start a Project
-          </a>
+          </Link>
         </div>
 
         <div className="md:hidden flex items-center gap-3">
-          <a
+          <Link
             className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 shadow-sm ${
               scrolled ? 'bg-black text-white' : 'bg-white text-black'
             }`}
-            href="/#contact"
+            to="/contact"
           >
             Start a Project
-          </a>
+          </Link>
           <button
             aria-controls="mobile-menu"
             aria-expanded={mobileMenuOpen}
@@ -92,22 +92,22 @@ export default function Header() {
         }`}>
           <div className="flex flex-col space-y-2 text-sm font-medium">
             <Link to="/" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>Home</Link>
-            <a href="/#services" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>Services</a>
+            <Link to="/services" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>Services</Link>
             <Link to="/projects" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>Projects</Link>
-            <a href="/#about" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>About</a>
-            <a href="/#contact" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>Contact</a>
+            <Link to="/about" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>About</Link>
+            <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className={`px-3 py-2 rounded-lg ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-neutral-900'}`}>Contact</Link>
           </div>
 
           <div className={`pt-2 border-t flex flex-col gap-2 ${scrolled ? 'border-neutral-200' : 'border-neutral-800'}`}>
-            <a
-              href="/#contact"
+            <Link
+              to="/contact"
               onClick={() => setMobileMenuOpen(false)}
               className={`w-full py-2.5 rounded-full font-semibold text-center text-sm shadow-md active:scale-95 transition-all ${
                 scrolled ? 'bg-black text-white' : 'bg-white text-black'
               }`}
             >
               Start a Project
-            </a>
+            </Link>
           </div>
         </div>
       )}

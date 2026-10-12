@@ -14,7 +14,7 @@ const CARDS = [
     description: 'Modern, responsive websites and web applications built for performance, usability and growth.',
     image: '/main/1/what-u-learn/master-of-funde.png',
     initial: 'W',
-    href: '/#contact'
+    href: '/services'
   },
   {
     id: 'custom-software',
@@ -23,7 +23,7 @@ const CARDS = [
     description: 'Tailored software solutions designed around your business processes and requirements.',
     image: '/main/1/what-u-learn/master-of-color.png',
     initial: 'S',
-    href: '/#contact'
+    href: '/services'
   },
   {
     id: 'mobile-applications',
@@ -32,7 +32,7 @@ const CARDS = [
     description: 'Modern mobile applications designed to provide seamless experiences across devices.',
     image: '/main/1/what-u-learn/power-of-sound.png',
     initial: 'M',
-    href: '/#contact'
+    href: '/services'
   },
   {
     id: 'ai-automation',
@@ -41,7 +41,7 @@ const CARDS = [
     description: 'Intelligent AI-powered features and automation solutions that help businesses work smarter.',
     image: '/main/1/what-u-learn/typo.png',
     initial: 'A',
-    href: '/#contact'
+    href: '/services'
   },
   {
     id: 'ui-ux-design',
@@ -50,7 +50,7 @@ const CARDS = [
     description: 'Clean, intuitive and user-focused digital experiences designed to make products easier to use.',
     image: '/main/1/real-projects/motion.png',
     initial: 'D',
-    href: '/#contact'
+    href: '/services'
   },
   {
     id: 'cloud-devops',
@@ -59,7 +59,7 @@ const CARDS = [
     description: 'Reliable deployment, APIs, infrastructure and cloud solutions for scalable applications.',
     image: '/main/1/real-projects/before-after.png',
     initial: 'C',
-    href: '/#contact'
+    href: '/services'
   }
 ];
 
