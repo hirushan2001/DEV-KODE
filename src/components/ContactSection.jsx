@@ -49,7 +49,7 @@ export default function ContactSection() {
           spread: 80,
           origin: { y: 0.6 }
         });
-      } catch (err) {
+      } catch {
         // Silent fallback
       }
     }, 1000);

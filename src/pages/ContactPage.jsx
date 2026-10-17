@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import confetti from "canvas-confetti";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,22 +7,14 @@ import {
   Phone,
   MessageSquare,
   MapPin,
-  Clock,
   ShieldCheck,
-  Sparkles,
   Send,
-  CheckCircle2,
   ChevronDown,
   Calculator,
   ArrowRight,
   HelpCircle,
-  Code,
-  Layers,
-  Zap,
-  Globe
 } from "lucide-react";
 import ComparisonMatrix from "../components/ComparisonMatrix";
-import EngineeringPipeline from "../components/EngineeringPipeline";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -131,7 +122,7 @@ export default function ContactPage() {
           spread: 85,
           origin: { y: 0.6 },
         });
-      } catch (err) {
+      } catch {
         // Silent fallback
       }
     }, 1000);

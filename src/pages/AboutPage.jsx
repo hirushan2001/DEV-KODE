@@ -2,27 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {
-  Code2,
-  Cpu,
-  Globe,
-  Rocket,
-  ShieldCheck,
-  Zap,
-  Layers,
-  Users,
-  CheckCircle2,
-  ArrowRight,
-  Sparkles,
-  Terminal,
-  Database,
-  Smartphone,
-  Cloud,
-  Check
-} from "lucide-react";
 import ComparisonMatrix from "../components/ComparisonMatrix";
 import EngineeringPipeline from "../components/EngineeringPipeline";
-import RotatingServiceMorph from "../components/RotatingServiceMorph";
 
 gsap.registerPlugin(ScrollTrigger);
 

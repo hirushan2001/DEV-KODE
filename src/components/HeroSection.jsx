@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -116,8 +116,6 @@ export default function HeroSection() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  const activeMod = HERO_DATA[activeTab];
 
   return (
     <div id="home" className="sticky top-0 z-10 w-full bg-black">

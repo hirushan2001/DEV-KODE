@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import confetti from 'canvas-confetti';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,7 +7,6 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function PricingSection() {
-  const [timeLeft, setTimeLeft] = useState({ hours: 10, minutes: 40, seconds: 0 });
   const sectionRef = useRef(null);
   const parallaxRef = useRef(null);
   const topBannerRef = useRef(null);
@@ -97,29 +96,17 @@ export default function PricingSection() {
     );
   }, { scope: sectionRef });
 
-  const handleEnrollClick = (e) => {
+  const handleEnrollClick = () => {
     try {
       confetti({
         particleCount: 120,
         spread: 80,
         origin: { y: 0.6 }
       });
-    } catch (err) {
+    } catch {
       // Fallback silent
     }
   };
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.seconds > 0) return { ...prev, seconds: prev.seconds - 1 };
-        if (prev.minutes > 0) return { ...prev, minutes: 59, seconds: 59 };
-        if (prev.hours > 0) return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        return { hours: 23, minutes: 59, seconds: 59 };
-      });
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div className="relative z-10 w-full bg-neutral-950 pt-6 sm:pt-10" id="pricing">
